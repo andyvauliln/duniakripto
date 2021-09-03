@@ -1,0 +1,55 @@
+{
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "javascript.validate.enable": false,
+  "prettier.disableLanguages": ["js"],
+  "files.autoSave": "onFocusChange",
+  "workbench.panel.defaultLocation": "right",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+  "workbench.statusBar.feedback.visible": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "editor.renderWhitespace": "all",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "files.insertFinalNewline": true,
+  // "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "explorer.openEditors.visible": 0,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.git": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "editor.snippetSuggestions": "top",
+  "breadcrumbs.enabled": true,
+  "gitlens.views.repositories.files.layout": "tree",
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}

@@ -6,7 +6,34 @@
       ],
       "plugins": [
         "@quickbaseoss/babel-plugin-styled-components-css-namespace",
-        "babel-plugin-styled-components"
+        "babel-plugin-styled-components",
+        [
+          "module-resolver",
+          {
+            "root": [
+              "./src/components"
+            ],
+            "alias": {
+              "tz-api": "./src/services/api",
+              "components": [
+                "./src/components"
+              ],
+              "app": [
+                "./src/app"
+              ],
+              "tz-model": "./src/services/model",
+              "tz-utils": "./src/utils",
+              "tz-base": "./src/components/Base",
+              "tz-hooks": "./src/hooks",
+              "tz-theme": "./src/components/Theme",
+              "tz-config": "./src/config",
+              "tz-hoc": "./src/hoc",
+              "tz-charts": "./src/components/Charts",
+              "tz-services": "./src/services/",
+              "tz-animation": "./src/components/Base/Animation/Keyframes"
+            }
+          }
+        ]
       ]
     }
   }

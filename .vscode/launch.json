@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      //"url": "http://localhost:3000/tz1RHDnG9zhC8AXPy5fFhdP1KKKDh4C1ahaY", // contract
+      //"url": "http://localhost:3001/bookmarks", // contract
+      //"url": "http://localhost:3000/tz1QKC2cuerZE5kGCtkcobUw2ZpfQwtekn6p", // basic
+      //"url": "http://localhost:3000/BLN4ZrUyhPwW4NNi3J1h3M4Wk9xc1z4tuNxb7UiZMxDExyMNvBd", // delegator
+      // "url": "http://localhost:3000/", // delegator
+      "url": "http://localhost:3000/tz1UdeKoMJivgqRgRUNzroMwRJYmJY8BtaWe", // delegator
+      //"url": "http://localhost:3000/qa#Charts", // delegator
+      //"url": "http://localhost:3000/tz1VmiY38m3y95HqQLjMwqnMS7sdMfGomzKi", // baker
+      //"url": "http://localhost:3000/802390",
+      //"url": "http://localhost:3000", // baker
+      //"url": "http://localhost:3000/tz1Vm5cfHncKGBo7YvZfHc4mmudY4qpWzvSB", // baker
+      // "url": "http://localhost:3000/tz1Vm5cfHncKGBo7YvZfHc4mmudY4qpWzvSB/rights/198", // baker
+      //"url": "http://localhost:3000/tz1VmiY38m3y95HqQLjMwqnMS7sdMfGomzKi/rewards/204", // baker
+      //"url": "http://localhost:3000/tz1Vm5cfHncKGBo7YvZfHc4mmudY4qpWzvSB/bonds/205", // baker
+      //"url": "http://localhost:3000/KT1ETPG89SUW4qnuR7WpjcNju9wyjWcjY2W7", // contract with internal
+      // "url": "http://localhost:3000/tz1W1qbXXJrtLWwaaoXhe8LYGZqmNnpKaH9q/rights/116", // contract with internal
+      //"url": "http://localhost:3001/bookmarks", // baker
+      //"url": "http://localhost:3000/BLyRPpP41H2aM7aHX5A1JuGQtPWUAe4k7jXe6oyEdym6cwcpdhX", //block
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
