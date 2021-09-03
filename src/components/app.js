@@ -10,7 +10,7 @@ import Blogs from '../routes/blogs';
 import Blog from '../routes/blog';
 import Contact from '../routes/contact';
 import ContactSuccess from '../routes/contact-success';
-
+import styled from 'styled-components';
 export default class App extends Component {
 
 	/** Gets fired when the route changes.
@@ -26,6 +26,7 @@ export default class App extends Component {
 			<Provider value={props}>
 				<div id="app">
 					<Header />
+					<Test>AAA</Test>
 					<Router onChange={this.handleRoute}>
 						<Home path="/" />
 						<Blogs path="/blogs/" />
@@ -39,3 +40,9 @@ export default class App extends Component {
 		);
 	}
 }
+
+
+const Test = styled.div`
+  background: red;
+`;
+
