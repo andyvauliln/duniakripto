@@ -1,8 +1,8 @@
-import Footer from 'components/Layout/Footer';
-import Header from 'components/Layout/Header/Header.js';
-import Sidebar from 'components/Layout/Sidebar/Sidebar';
-import { ErrorBoundary } from 'Errors';
-import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import ErrorBoundary from './ErrorBoundary';
+import { h } from 'preact';
 import styled from 'styled-components';
 import { FlexColumn, FlexRow } from 'tz-base';
 import { sizes } from 'tz-config';

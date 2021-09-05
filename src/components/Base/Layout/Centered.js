@@ -1,10 +1,8 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 import { color, height, space, width } from 'styled-system';
 
-const Centered = props => {
-  return <Wrapper {...props}>{props.children}</Wrapper>;
-};
+const Centered = props => <Wrapper {...props}>{props.children}</Wrapper>;
 
 const Wrapper = styled.div`
   ${space}

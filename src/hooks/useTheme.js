@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { h } from 'preact';
+import { useState, useEffect } from 'preact/hooks';
 import useStorage from './useStorage';
 
 export default function useTheme() {

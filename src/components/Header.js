@@ -1,9 +1,8 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 import { Box, FlexRow, FlexRowWrap } from 'tz-base';
-import CurrencySwitcher from 'tz-base/CurrencySwitcher';
 import { sizes } from 'tz-config';
-import Searchbar from '../Searchbar/Searchbar';
+import Searchbar from './Searchbar';
 
 const Header = () => (
 	<Wrapper as="header" py="1em">
@@ -17,7 +16,6 @@ const Header = () => (
 			<a href="https://tzstats.com/blog" target="_blank" rel="noopener noreferrer">
 				Blog
 			</a>
-			<CurrencySwitcher />
 		</Navigation>
 	</Wrapper>
 );

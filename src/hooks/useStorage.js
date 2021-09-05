@@ -1,10 +1,11 @@
+import { h } from 'preact';
 import storage from 'local-storage-fallback';
 import { useGlobal } from 'reactn';
 
 export default function useStorage() {
 	const [settings, _setSettings] = useGlobal('settings');
 
-	if (settings.version !== latestVersion) {
+	if (settings && settings.version !== latestVersion) {
 		const migrated = migrateStorage(settings.version, latestVersion, settings);
 		_setSettings({ ...migrated });
 		storage.setItem('settings', JSON.stringify(migrated));

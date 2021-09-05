@@ -1,10 +1,11 @@
-import React from 'react';
+import { h } from 'preact';
+import { useState, useEffect } from 'preact/hooks';
 import { debounce } from 'lodash-es';
 
 const useResize = svgRef => {
-	const [sizes, setSizes] = React.useState({ height: 0, width: 0 });
+	const [sizes, setSizes] = useState({ height: 0, width: 0 });
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const resize = debounce(() => {
 			if (!svgRef.current) {
 				return;

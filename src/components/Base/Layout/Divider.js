@@ -1,10 +1,8 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 import { space } from 'styled-system';
 
-const Divider = ({ ...props }) => {
-  return <Wrapper {...props}>&nbsp;</Wrapper>;
-};
+const Divider = ({ ...props }) => <Wrapper {...props}>&nbsp;</Wrapper>;
 
 const Wrapper = styled.div`
   ${space}

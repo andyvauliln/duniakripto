@@ -1,25 +1,25 @@
 import storage from 'local-storage-fallback';
 import { ENV } from 'tz-config';
-import { isDefined } from '.';
+//import { isDefined } from '.';
 
-function fromEnvOrPassthrough(key) {
-	// strip replacement chars `<[[]]>`
-	const match = /<\[\[(.*)]]>/.exec(key);
-	if (!match) {
-		return key;
-	}
-	return process.env['REACT_APP_' + match[1]];
-}
+// function fromEnvOrPassthrough(key) {
+// 	// strip replacement chars `<[[]]>`
+// 	const match = /<\[\[(.*)]]>/.exec(key);
+// 	if (!match) {
+// 		return key;
+// 	}
+// 	return process.env['REACT_APP_' + match[1]];
+// }
 
-export function getEnvString(key, defaultParam) {
-	const val = fromEnvOrPassthrough(key);
-	return isDefined(val) && val !== '' ? String(val) : defaultParam;
-}
+// export function getEnvString(key, defaultParam) {
+// 	const val = fromEnvOrPassthrough(key);
+// 	return isDefined(val) && val !== '' ? String(val) : defaultParam;
+// }
 
-export function getEnvBool(key, defaultParam = false) {
-	const val = fromEnvOrPassthrough(key);
-	return isDefined(val) ? val === 1 || val === '1' || val === 'true' : defaultParam;
-}
+// export function getEnvBool(key, defaultParam = false) {
+// 	const val = fromEnvOrPassthrough(key);
+// 	return isDefined(val) ? val === 1 || val === '1' || val === 'true' : defaultParam;
+// }
 
 export function makeid(length) {
 	let result = '';

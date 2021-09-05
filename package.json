@@ -40,12 +40,17 @@
     "lodash-es": "^4.17.21",
     "markdown-to-jsx": "^6.10.3",
     "moment": "^2.29.1",
+    "numeral": "^2.0.6",
     "preact": "^10.0.0",
     "preact-cli-plugin-netlify": "^1.5.0",
     "preact-render-to-string": "^5.0.6",
     "preact-router": "^3.0.1",
+    "react-i18next": "^11.11.4",
+    "react-toastify": "^8.0.2",
     "reactn": "^2.2.7",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "styled-system": "^5.1.5",
+    "styled-theming": "^2.2.0"
   },
   "prettier": {
     "printWidth": 160,
