@@ -3,31 +3,6 @@
     "test": {
       "presets": [
         ["preact-cli/babel", { "modules": "commonjs" }]
-      ],
-      "plugins": [
-        "@quickbaseoss/babel-plugin-styled-components-css-namespace",
-        "babel-plugin-styled-components",
-        [
-          "module-resolver",
-          {
-            "root": [
-              "./src/components"
-            ],
-            "alias": {
-              "components": [
-                "./src/components"
-              ],
-              "tz-utils": "./src/utils",
-              "tz-base": "./src/components/Base",
-              "tz-hooks": "./src/hooks",
-              "tz-theme": "./src/components/Theme",
-              "tz-config": "./src/config",
-              "tz-hoc": "./src/hoc",
-              "tz-services": "./src/services/",
-              "tz-animation": "./src/components/Base/Animation/Keyframes"
-            }
-          }
-        ]
       ]
     }
   }

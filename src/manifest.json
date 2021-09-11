@@ -1,11 +1,11 @@
 {
-  "name": "duniakripto",
-  "short_name": "duniakripto",
-  "start_url": "https://duniakripto.com",
+  "name": "awg-portfolio",
+  "short_name": "awg-portfolio",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#eee",
-  "background_color": "#282828",
+  "background_color": "#fff",
+  "theme_color": "#673ab8",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
