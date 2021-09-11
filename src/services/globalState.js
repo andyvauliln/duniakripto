@@ -12,7 +12,7 @@ const defaultSettings = {
 	version: 2,
 	bookmarks: [],
 	history: [],
-	consent: { isSettings: false, isAnalytics: false, isConfirmed: false },
+	consent: { isSettings: false, isAnalytics: false, isConfirmed: false }
 };
 
 function getSettings() {
@@ -30,7 +30,7 @@ const setDefaultGlobalState = () => {
 		appPage,
 		isNotFound,
 		hasUpgrade,
-		settings: getSettings(),
+		settings: getSettings()
 	});
 };
 

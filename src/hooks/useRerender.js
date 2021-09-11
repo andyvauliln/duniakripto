@@ -1,5 +1,6 @@
 import { h } from 'preact';
+import { useReducer } from 'preact/hooks';
 
 export default function useRerender() {
-	return React.useReducer(() => ({}))[1];
+	return useReducer(() => ({}))[1];
 }

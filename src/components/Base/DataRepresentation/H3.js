@@ -3,7 +3,7 @@ import TranslateView from './TranslateView';
 import { h } from 'preact';
 import styled from 'styled-components';
 
-export default ({ k, badge, children, ...props }) => {
+const H3 = ({ k, badge, children, ...props }) => {
 	k = k || '';
 	const key = k.startsWith('tk_') ? k : 'tk_' + k;
 	return children ? (
@@ -21,6 +21,8 @@ export default ({ k, badge, children, ...props }) => {
 		</TranslateView>
 	);
 };
+
+export default H3;
 
 const Stretch = styled.span`
 	display: flex;

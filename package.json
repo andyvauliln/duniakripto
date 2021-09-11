@@ -4,14 +4,17 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "preact build --prerenderUrls ./prerender-urls.js",
+    "build": "preact build",
     "serve": "sirv build --port 8080 --cors --single",
-    "dev": "preact watch --prerenderUrls ./prerender-urls.js",
+    "dev": "preact watch",
     "lint": "eslint src",
     "test": "jest"
   },
   "eslintConfig": {
-    "extends": "eslint-config-synacor"
+    "extends": "eslint-config-synacor",
+    "rules": {
+      "no-console": "off"
+    }
   },
   "eslintIgnore": [
     "build/*"
@@ -34,6 +37,7 @@
   "dependencies": {
     "@preact/prerender-data-provider": "^3.0.0",
     "i18next": "^20.6.0",
+    "i18next-xhr-backend": "^3.2.2",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "local-storage-fallback": "^4.1.2",
@@ -58,7 +62,7 @@
     "useTabs": true,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5",
+    "trailingComma": "none",
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "arrowParens": "avoid",

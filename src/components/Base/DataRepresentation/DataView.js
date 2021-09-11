@@ -24,6 +24,7 @@ const DataView = ({ tag = 'span', t, i18d, children, v, ...props }) => {
 			delete props.href;
 		}
 	}
+	console.log(children);
 	// add variant as class name
 	if (props.variant && props.variant !== 'inherit') {
 		props.className = props.variant;
@@ -46,18 +47,16 @@ const DataView = ({ tag = 'span', t, i18d, children, v, ...props }) => {
 				re = /^(.*),([^ ]*)( .*)?$/;
 			}
 			let arr = re.exec(num.toString());
+			//prettier-ignore
 			children =
+			//prettier-ignore
 				arr && arr.length > 0 ? (
-					<>
-						' \' '{arr[1]}' '
-						{arr.length > 2 && (
-							<Dim>
-								{decimal}
-								{arr[2]}
-							</Dim>
-						)}
-						' \' '{arr.length > 3 && arr[3]}' '
-					</>
+					<>'					'{arr[1] }'					'{arr.length > 2 && (
+						<Dim>
+							{decimal}
+							{arr[2]}
+						</Dim>
+					)}'					'{arr.length > 3 && arr[3]}'				'</>
 				) : (
 					<>{num}</>
 				);

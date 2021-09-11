@@ -12,10 +12,10 @@ export default function useTheme() {
 	function getDefaultTheme() {
 		// default to dark
 		let mode = 'dark';
-		if (!!window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-			// OS theme setting detected as light
-			mode = 'light';
-		}
+		// if (!!window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+		// 	// OS theme setting detected as light
+		// 	mode = 'light';
+		// }
 		return { mode };
 	}
 
