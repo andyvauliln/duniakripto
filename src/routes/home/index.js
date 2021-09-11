@@ -10,13 +10,13 @@ import Grid from '@material-ui/core/Grid';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import WebFont from 'webfontloader';
+// import WebFont from 'webfontloader';
 
-WebFont.load({
-	google: {
-		families: ['Alegreya Sans SC:700', 'sans-serif']
-	}
-});
+// WebFont.load({
+// 	google: {
+// 		families: ['Alegreya Sans SC:700', 'sans-serif']
+// 	}
+// });
 
 const useStyles = makeStyles(theme => ({
 	circle: {
