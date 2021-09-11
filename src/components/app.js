@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import { Provider } from '@preact/prerender-data-provider';
-import Header from './header';
+//import Header from './header';
 //import Footer from './footer';
 import NotFoundPage from '../routes/notfound';
 
@@ -21,7 +21,7 @@ export default class App extends Component {
 		return (
 			<Provider value={props}>
 				<div id="app">
-					<Header />
+					{/* <Header /> */}
 					<Router onChange={this.handleRoute}>
 						<Home path="/" />
 						<Blogs path="/blogs/" />

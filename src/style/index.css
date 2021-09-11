@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Courgette&text=Jane%20Doe");
+@import url('https://fonts.googleapis.com/css?family=Courgette&text=Jane%20Doe');
 
-html, body {
+html,
+body {
 	height: 100%;
 	width: 100%;
-	padding: 0 1vw;
 	margin: 0;
-	background: #FAFAFA;
+	background: #fafafa;
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
 	color: #444;
@@ -20,7 +20,6 @@ html, body {
 #app {
 	height: 100%;
 }
-
 
 a {
 	text-decoration: none;
@@ -40,11 +39,11 @@ a {
 	position: relative;
 }
 
-@keyframes placeHolderShimmer{
-  0% {
-      background-position: -468px 0;
-  }
-  100% {
-      background-position: 468px 0;
-  }
+@keyframes placeHolderShimmer {
+	0% {
+		background-position: -468px 0;
+	}
+	100% {
+		background-position: 468px 0;
+	}
 }
