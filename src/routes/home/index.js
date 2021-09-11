@@ -159,7 +159,7 @@ export default function Home() {
 						{/* Use above example for specific date */}
 						<Countdown date={Date.now() + 3000000000} renderer={renderer} />
 					</Typography>
-					<Grid container spacing={0} alignItems="center" justify="center">
+					{/* <Grid container spacing={0} alignItems="center" justify="center">
 						<div className={classes.circle}>
 							<Link href="#">
 								<InstagramIcon fontSize="large" className={classes.instagramIcon} />
@@ -175,7 +175,7 @@ export default function Home() {
 								<TwitterIcon fontSize="large" className={classes.twitterIcon} />
 							</Link>
 						</div>
-					</Grid>
+					</Grid> */}
 				</Container>
 			</div>
 		</Fragment>
