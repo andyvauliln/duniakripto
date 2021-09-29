@@ -22,6 +22,57 @@
 			<meta property="twitter:description" content="<%= htmlWebpackPlugin.options.seo.subtitle %>" />
 		<% } %>
 		<% preact.headEnd %>
+		<style>
+			html {
+			  box-sizing: border-box;
+			  touch-action: manipulation;
+			  margin: 0;
+			  padding: 0;
+			  width: 100%;
+			  height: 100%;
+			}
+	  
+			:focus {
+			  outline: none;
+			}
+			::selection {
+			  background: var(--secondary-transparent);
+			}
+			*,
+			*:before,
+			*:after {
+			  box-sizing: border-box;
+			  position: relative;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			  -webkit-text-size-adjust: 100%;
+			  -ms-text-size-adjust: 100%;
+			}
+	  
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			ol,
+			ul {
+			  margin: 0;
+			  padding: 0;
+			}
+	  
+			ol,
+			ul {
+			  list-style: none;
+			}
+	  
+			img {
+			  width: inherit;
+			  height: inherit;
+			}
+		  </style>
 	</head>
 	<body>
 		<% preact.bodyEnd %>
